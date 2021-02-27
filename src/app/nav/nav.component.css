@@ -1,0 +1,11 @@
+nav{
+    background-color: rgb(61, 139, 255);;
+}
+.opciones-nav{
+    color: rgb(255, 255, 255) !important;
+    background-color: #003663;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+}

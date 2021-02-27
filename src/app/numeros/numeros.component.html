@@ -1,0 +1,28 @@
+<div class="text-center bg-success text-white rounded p-2 m-2">
+  <h4 class="text-center pt-2">{{tituloGanadores}}</h4>
+  <span class="h5 pb-2" *ngFor="let item of ganadores">
+    <ng-container *ngIf="item == 0; else elseTemplate">
+      ¡Has ganado! <br>
+    </ng-container>
+    <ng-template #elseTemplate>
+      Jugador {{item}}<br>
+    </ng-template>
+    
+    </span>
+</div>
+
+<div class="text-center rounded bg-light p-2 m-2">
+  <span class="h6 m-3">RECIENTE</span>
+  <div>
+    <span class="h-100 text-center h3">{{ultimoNumero}}</span>
+  </div>
+  
+</div>
+
+<div class="bg-light rounded p-3 m-2">
+  <h4 class="text-center m-3">NUMEROS</h4>
+  <span class="h6" *ngFor="let item of numerosVista">{{item}}, </span>
+</div>
+
+
+

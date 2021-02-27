@@ -1,0 +1,18 @@
+table.table-bordered{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border:5px solid #007bff;
+  }
+table.table-bordered > thead > tr > th{
+    border:3px solid #000000;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #000000;
+}
+
+td{
+    background-color: #ffffff;
+}
+
+td:hover{
+    background-color: rgb(103, 212, 255);
+}

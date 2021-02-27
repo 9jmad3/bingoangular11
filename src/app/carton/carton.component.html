@@ -1,0 +1,63 @@
+<table class="table table-bordered text-center">
+    <thead>
+      <tr class="border border-primary">
+        <th colspan="9"  class="bg-primary text-white">
+          
+            <ng-container *ngIf="id>0; else elseTemplate">
+              <h6>JUGADOR {{id}}</h6>
+            </ng-container>
+            <ng-template #elseTemplate>
+              <h6>BINGO LOTTO</h6>
+            </ng-template>
+        
+        </th>
+      </tr>
+    </thead>
+    <tbody class="border border-primary rounded">      
+      <tr>
+        <ng-container *ngFor="let item of rowOne">
+          <ng-container *ngIf="item == 0; else elseTemplate">
+            <td class="bg-primary">
+              {{item}}
+            </td>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <td [ngClass]="marcado" (click) = onClick($event.target)>
+              {{item}}
+            </td>
+          </ng-template>    
+        </ng-container>  
+      </tr>
+
+      <tr>
+        <ng-container *ngFor="let item of rowTwo">
+          <ng-container *ngIf="item == 0; else elseTemplate">
+            <td class="bg-primary">
+              {{item}}
+            </td>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <td [ngClass]="marcado" (click) = onClick($event.target)>
+              {{item}}
+            </td>
+          </ng-template>    
+        </ng-container>  
+      </tr>
+
+      <tr>
+        <ng-container *ngFor="let item of rowThree">
+          <ng-container *ngIf="item == 0; else elseTemplate">
+            <td class="bg-primary">
+              {{item}}
+            </td>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <td [ngClass]="marcado" (click) = onClick($event.target)>
+              {{item}}
+            </td>
+          </ng-template>    
+        </ng-container>  
+      </tr>
+     
+    </tbody>
+  </table>

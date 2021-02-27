@@ -1,0 +1,24 @@
+<nav class="nav navbar fixed justify-content-center">
+    <div class="form-inline opciones-nav">
+        <label for="" class="ml-3">Oponentes</label>
+        <select (click)="capturarJugadorSeleccionado($event)" class="form-control ml-4 mr-4">
+            <option *ngFor="let jugador of jugadores">
+                {{jugador}}
+            </option>
+        </select>
+    
+        <label for="" class="ml-3">Precio Carton</label>
+        <select (click)="capturarPrecioSeleccionado($event)" class="form-control ml-4 mr-4">
+            <option *ngFor="let precio of precios">
+                {{precio}}
+            </option>
+        </select>
+
+        <div *ngIf="!hidden">
+            <button class="nav-link  m-1 btn btn-warning text-dark" (click)="onClick()">Nuevo Juego</button>
+        </div>
+       
+        <span class="m-2 btn text-white">{{mensaje}}{{cronometro}}</span>
+    </div>
+</nav>
+  
