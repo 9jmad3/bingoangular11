@@ -5,25 +5,17 @@ const app = express();
 
 app.use(express.static(__dirname+'/dist/ng-blog'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/ng-blog/index.html'));
+    res.sendFile(path.join(__dirname+'/dist/ng-blog/bingo-dos'));
 });
 
 app.listen(process.env.PORT || 8080);
+
+// ORIGINALES DE PACKAGE.JSON
 // {
 // "scripts": {
 //     "ng": "ng",
-//     "start": "node server.js",
-//     "build": "ng build",
-//     "test": "ng test",
-//     "lint": "ng lint",
-//     "e2e": "ng e2e",
+//     "start": "ng serve",
 //     "lite": "lite-server",
 //     "postinstall": "ng build --prod"
 //   }
-
-// "engines": {
-// "node": "10.14.2",
-// "npm": "6.4.1"
-//     }
-
-// }
+// No traia nada de engines
