@@ -1,5 +1,21 @@
 # BingoDos
 
+Practica final de la asignatura DWEC del cfgs DAW.
+Angular CLI: 11.1.4
+Node: 14.15.4
+Angular: 11.1.2
+
+Se ha utilizado bootstrap en el proyecto.
+ 
+   ![Demo]()
+
+
+    📦 Caracteristicas
+
+        El jugador puede elegir el número de oponentes y el precio de los cartones.
+        El jugador puede cantar bingo.
+        Si un bot gana, el juego comprueba el bingo del jugador automaticamente.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
 
 ## Development server
